@@ -4,15 +4,32 @@
 }
 
 .pHeader::first-letter{
-  font-size: 2.25em;
+  font-size: 2.2em;
 }
 
 .pHeader{
   margin-bottom: -10px;
 }
 
+.pumpkin{
+  float: left;
+  margin: 20px -25px 0px 20px ;
+}
+
 .titleHeader,.smallHeader{
   text-indent: 50px;
+}
+
+#content{
+  order: 2;
+  width: 640px;
+  margin: -20px 15px;
+}
+
+#sidebar{
+  width: 160px;
+  order: 1;
+  margin-top: 5px;
 }
 
 a{
@@ -31,7 +48,6 @@ body{
   border-right: 2px black solid;
   border-top: 1px black solid;
   border-bottom: 1px black solid;
-  /*box-shadow: 0px 10px 10px 5px black;*/
   box-shadow: 0 15px 15px -4px black, 0 -9px 0px 0px white, 
       12px 0 15px -4px black, -12px 0 15px -4px black;
   margin: auto;
@@ -45,6 +61,7 @@ footer{
   background: linear-gradient(45deg, black, orange, white);
   background-color: orange;
   margin-top: 22px;
+  clear: both;
 }
 
 h1{
@@ -73,16 +90,12 @@ html{
   padding-bottom: 50px;
 }
 
-img{
-  float: left;
-  margin-top: 8px;
-}
-
 li{
   margin: 3px 0;
 }
 
 main{
-  margin: -20px 10px;
+  display: flex;
+  flex-direction: row;
 }
 
