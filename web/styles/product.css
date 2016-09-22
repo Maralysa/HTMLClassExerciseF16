@@ -3,14 +3,6 @@
   font-size: 100%;
 }
 
-.pHeader::first-letter{
-  font-size: 2.2em;
-}
-
-.pHeader{
-  margin-bottom: -10px;
-}
-
 .pumpkin{
   float: left;
   margin: 20px -25px 0px 20px ;
@@ -25,9 +17,7 @@ main{
   flex-direction: row;
 }
 
-
-
-#topbar, #sidebar{
+#topbar, #leftSidebar{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -52,15 +42,15 @@ a.current{
   color:orange;
 }
 
-#sidebar{
+#leftSidebar{
   float: left;
   height: 3em;
   margin-left: -30px;
   order: 1;
-  width: 60%;
+  width: 29.1%;
 }
 
-[id=sidebar] li,[id=sidebar] a{
+[id=leftSidebar] li,[id=leftSidebar] a{
   background-color: orange;
   border: 1px solid black;
   color: black;
@@ -68,7 +58,34 @@ a.current{
   line-height: 2em;
   text-indent: .5em;
   text-decoration: none;
-  
+}
+
+#rightSidebar{
+  background-color: #F5DEB3;
+  float: right;
+  height: 100%;
+  order: 3;
+  width: 223px;
+}
+
+figure{
+  margin: 0 0;
+  width: 9em;
+}
+
+[id=rightSidebar] ul{
+  margin: 0px -30px;
+}
+
+[id=rightSidebar] li{
+  height: 6em;
+  list-style: none;
+  width: 9em;
+}
+
+figcaption a{
+  color: black;
+  font-weight: normal;
 }
 
 #content{
@@ -78,13 +95,21 @@ a.current{
   order: 2;
 }
 
+.catDescription{
+  margin-left: 10px;  
+}
+
 a{
   color: orange;
   font-weight: bold;
 }
 
-.imgLink{
-  text-decoration: none;
+img{
+  float:left;
+}
+
+#rightSidebar a:hover{
+  color: green;
 }
 
 a:hover{
@@ -110,7 +135,6 @@ footer{
   border-top: 2px black solid;
   clear: both;
   font-size: 1em;
-  margin-top: 22px;
   text-align: center;
 }
 
@@ -122,9 +146,18 @@ h2{
   font-size: 1.8em;
 }
 
+section h2{
+  margin-top: 33px;
+}
+
 h3{
   font-size: 1.5em;
   margin-bottom: -5px;
+}
+
+h6{
+  margin: 5px 10px;
+  margin-bottom: 5px;
 }
 
 header{
