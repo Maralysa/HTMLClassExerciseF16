@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 9/12/2016 Jasmine M/ Jones -->
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Halloween Store</title>
+    <link rel="stylesheet" type="text/css" href="styles/email.css">
+  </head>
+
+  <body>
+    <header>
+      <img class="pumpkin" src="images/pumpkin.gif" alt="Pumpkin" width="100" height="100">
+      <h1 class="titleHeader">The Halloween Store</h1>
+      <h2 class="smallHeader">For the little Goblin in all of us!</h2>
+    </header>
+    
+    <div id="topbar">
+        <section>
+          <nav>
+            <ul>
+              <li><a href="index.html" title="Home">Home</a></li>
+              <li><a href="products/productList.html" title="Product List">Product List</a></li>
+              <li><a href="personal.htm" title="Personal">Personal</a></li>
+              <li><a href="decoratingIdeas.htm.htm" title="Decorating Ideas">Decorating Ideas</a></li>
+              <li><a href="email.html" title="Join Email" class="current">Join Email</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+
+    <main>
+      <div id="sidebar">
+        <section>
+          <nav>
+            <ul>
+              <li><a href="products/props.htm" title="Props">Props</a></li>
+              <li><a href="products/costumes.htm" title="Costumes">Costumes</a></li>
+              <li><a href="products/specialEffects.htm" title="Special Effects">Special Effects</a></li>
+              <li><a href="products/masks.htm" title="Masks">Masks</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+      <div id="content">
+        <section>
+          <h2>Please enter the following information</h2>
+          <form method="get" action="subscribe.html">
+            <p><label>First Name:</label><input name="firstName" type="text" autofocus required/></p>
+            <p><label>Last Name:</label><input name="lastName" type="text" required/></p>
+            <p><label>Email:</label><input name="email" type="email" required/></p>
+            <p><label>Zip Code:</label><input name="zipCode" type="text" placeholder="5 Digit Zip Code" pattern="^[0-9]{5}$"/></p>
+            <input id="submit" type="submit" value="Subscribe"/>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2016 Ben Murach</p>
+    </footer>
+  </body>
+
+</html>

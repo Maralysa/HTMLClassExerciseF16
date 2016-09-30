@@ -1,0 +1,155 @@
+*{
+  font-family: Century Gothic;
+  font-size: 100%;
+}
+
+.pHeader::first-letter{
+  font-size: 2.2em;
+}
+
+.pHeader{
+  margin-bottom: -10px;
+}
+
+.pumpkin{
+  float: left;
+  margin: 20px -25px 0px 20px ;
+}
+
+.titleHeader,.smallHeader{
+  text-indent: 50px;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+#topbar, #sidebar{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#topbar{
+  background: black;
+  height: 2.5em;
+  margin-top: -20px;
+}
+
+[id=topbar] li,[id=topbar] a{
+  background-color: black;
+  color: white;
+  display: inline-block;
+  line-height: 2em;
+  padding: 0 1em;
+  text-decoration: none;
+}
+
+a.current{
+  color:orange;
+}
+
+#sidebar{
+  float: left;
+  height: 3em;
+  margin-left: -30px;
+  order: 1;
+  width: 30.5%;
+}
+
+[id=sidebar] li,[id=sidebar] a{
+  background-color: orange;
+  border: 1px solid black;
+  color: black;
+  display: block;
+  line-height: 2em;
+  text-indent: .5em;
+  text-decoration: none;
+  
+}
+
+#content{
+  margin-top: -25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  order: 2;
+}
+
+#content p{
+  padding-bottom: 45px;
+}
+
+a{
+  color: orange;
+  font-weight: bold;
+}
+
+.imgLink{
+  text-decoration: none;
+}
+
+a:hover{
+  color: gray;
+}
+
+body{
+  background-color: white;
+  border-bottom: 1px black solid;
+  border-left: 2px black solid; 
+  border-right: 2px black solid;
+  border-top: 1px black solid;
+  box-shadow: 0 15px 15px -4px black, 0 -9px 0px 0px white, 
+      12px 0 15px -4px black, -12px 0 15px -4px black;
+  margin: auto;
+  width: 800px;
+}
+
+footer{
+  background: linear-gradient(45deg, black, orange, white);
+  background-color: orange;
+  border-bottom: 1px black solid;
+  border-top: 2px black solid;
+  clear: both;
+  font-size: 1em;
+  margin-top: 22px;
+  text-align: center;
+}
+
+h1{
+  font-size:2em;
+}
+
+h2{
+  font-size: 1.8em;
+}
+
+h3{
+  font-size: 1.5em;
+  margin-bottom: -5px;
+  padding-top: 10px;
+}
+
+header{
+  background: linear-gradient(45deg, white, orange, black);
+  background-color: orange;
+  border-bottom: 2px black solid;
+  border-top: 1px black solid;
+}
+
+html{
+  background-image: url("../images/bats.gif");
+  background-repeat: repeat;
+  padding-bottom: 50px;
+}
+
+li{
+  margin: 3px 0;
+}
+
+
+
+
+
