@@ -5,20 +5,30 @@
 
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halloween Store</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_rwd.css">
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('#top').slicknav({prependTo: '#mobile'});
+    });
+    </script>
   </head>
 
   <body>
     <header>
-      <img class="pumpkin" src="images/pumpkin.gif" alt="Pumpkin" width="100" height="100">
+      <div id="pumpkin"><img class="pumpkin" src="images/pumpkin.gif" alt="Pumpkin"></div>
       <h1 class="titleHeader">The Halloween Store</h1>
       <h2 class="smallHeader">For the little Goblin in all of us!</h2>
     </header>
     
     <div id="topbar">
         <section>
-          <nav>
+          <nav id="mobile"></nav>
+          <nav id ="top">
             <ul>
               <li><a href="index.html" title="Home" class="current">Home</a></li>
               <li><a href="products/productList.html" title="Product List">Product List</a></li>
@@ -54,8 +64,9 @@
         <section>
           <h3><b>Product of the week</b></h3>
           <br>
-          <a class="imgLink" href="products/cat.html"><img src="images/cat1.jpg" alt="Cat" width="150" height="150">
+          <div id="catPic"><a class="imgLink" href="products/cat.html"><img class="catPic" src="images/cat1.jpg" alt="Cat">
           </a>
+          </div>
           <br>
           <a href="products/cat.html" title="20&quot; Deranged Cat">20" Deranged Cat</a>
         </section>

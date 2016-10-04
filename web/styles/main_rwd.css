@@ -1,0 +1,240 @@
+*{
+  font-family: Century Gothic;
+  font-size: 100%;
+}
+
+.pHeader::first-letter{
+  font-size: 2.2em;
+}
+
+.pHeader{
+  margin-bottom: -.625em;
+}
+
+#pumpkin{
+  float: left;
+  padding: 1.5em 0 0 1.5em;
+  width: 15%;
+}
+
+.pumpkin{
+  height: auto;
+  min-width: 2.5em;
+  max-width: 5.313em;
+  width: 100%;
+}
+
+.titleHeader,.smallHeader{
+  text-indent: 50px;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+}
+
+#topbar, #sidebar{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#topbar{
+  background: black;
+  height: 2.5em;
+  margin-top: -1.25em;
+  max-width:960px;
+  width: 100%;
+}
+
+[id=topbar] ul{
+  padding-left: 0;
+  width:100%;
+}
+
+[id=topbar] li{
+  background-color: black;
+  color: white;
+  display: inline-block;
+  line-height: 2em;
+  width: 19.5%;
+}
+
+[id=topbar] a{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+a.current{
+  color:orange;
+}
+
+#sidebar{
+  float: left;
+  height: 3em;
+  margin-left: -1.875em;
+  order: 1;
+  width: 25%;
+}
+
+[id=sidebar] li,[id=sidebar] a{
+  background-color: orange;
+  border: 1px solid black;
+  color: black;
+  display: block;
+  line-height: 2em;
+  text-indent: .5em;
+  text-decoration: none;
+  
+}
+
+#content{
+  margin-top: -1.563em;
+  padding-left: .938em;
+  padding-right: .625em;
+  order: 2;
+  width: 75%;
+}
+
+a{
+  color: orange;
+  font-weight: bold;
+}
+
+.imgLink{
+  text-decoration: none;
+}
+#catPic{
+  width: 30%;
+}
+.catPic{
+  height: 100%;
+  max-width: 9.625em;
+  width: 100%;
+}
+
+a:hover{
+  color: gray;
+}
+
+body{
+  background-color: white;
+  border-bottom: 1px black solid;
+  border-left: 2px black solid; 
+  border-right: 2px black solid;
+  border-top: 1px black solid;
+  box-shadow: 0 15px 15px -4px black, 0 -9px 0px 0px white, 
+      12px 0 15px -4px black, -12px 0 15px -4px black;
+  margin: auto;
+  max-width: 960px;
+  width: 95%;
+}
+
+footer{
+  background: linear-gradient(45deg, black, orange, white);
+  background-color: orange;
+  border-bottom: 1px black solid;
+  border-top: 2px black solid;
+  clear: both;
+  font-size: 1em;
+  margin-top: 1.375em;
+  text-align: center;
+}
+
+h1{
+  font-size:2em;
+}
+
+h2{
+  font-size: 1.8em;
+}
+
+h3{
+  font-size: 1.5em;
+  margin-bottom: -.313em;
+}
+
+header{
+  background: linear-gradient(45deg, white, orange, black);
+  background-color: orange;
+  border-bottom: 2px black solid;
+  border-top: 1px black solid;
+}
+
+html{
+  background-image: url("../images/bats.gif");
+  background-repeat: repeat;
+  padding-bottom: 3.125em;
+}
+
+li{
+  margin: .188em 0;
+}
+#mobile{
+   display: none;
+}
+@media screen and (max-width: 800px){
+  p, h1, h2, h3, li{
+    font-size: 90%;
+  }
+  
+  body{
+    box-shadow: none;
+  }
+  
+  html{
+    background-image: none;
+  }
+  #pumpkin{
+    padding: 0;
+    width: 8%;
+  }
+  #content{
+    margin-top: .0001em;
+  }
+}
+
+@media screen and (max-width: 767px){
+  main{
+    flex-direction: column;
+  }
+  #content{
+    order: 1;
+    width: 90%;
+  }
+  #sidebar{
+    float: none;
+    margin: auto;
+    order: 2;
+    padding-bottom: 7em;
+    width: 35%
+  }
+  #topbar{
+    margin-bottom: .5em;
+    margin-top: .0001em
+  }
+  #top{
+    display: none;
+  }
+  #mobile{
+    display: block;
+  }
+  
+  #pumpkin{
+    padding: 0;
+    width: 10%;
+  }
+  
+  [id=topbar] a{
+    width: 4.5em;
+  }
+  
+}
+
+@media screen and (max-width: 479px){
+  h1, h2, h3{
+    font-size: 80%;
+  }
+}
